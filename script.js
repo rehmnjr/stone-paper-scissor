@@ -39,10 +39,13 @@ function randomChoice(){
    else{
     computerChoice = 'Scissor';
    }
-
+   
    let inputTxt = document.getElementById('display');
    inputTxt.value = computerChoice; 
-   res();
+
+   setTimeout(() => {
+    res();
+}, 100);
 }
 
 gameBtn1.addEventListener('click', randomChoice);
@@ -56,22 +59,19 @@ function res(){
     else if (computerChoice === 'Stone' && playerChoice === 'Paper'){
         alert(`You Won!`);
     }
-
     else if (computerChoice === 'Stone' && playerChoice === 'Scissor'){
-    alert(`You Lose!`);
+        alert(`You Lose!`);
     }
-
     else if (computerChoice === 'Paper' && playerChoice === 'Stone'){
         alert(`You Lose!`);
     }
     else if (computerChoice === 'Paper' && playerChoice === 'Scissor'){
         alert(`You Won!`);
     }
-    else if (computerChoice === 'scissor' && playerChoice === 'Paper'){
+    else if (computerChoice === 'Scissor' && playerChoice === 'Paper'){
         alert(`You Lose!`);
     }
     else if (computerChoice === 'Scissor' && playerChoice === 'Stone'){
         alert(`You Won!`);
     }
-   
 }
