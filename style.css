@@ -1,0 +1,156 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(https://a-static.besthdwallpaper.com/electromagnetic-spectrum-background-wallpaper-3840x1280-11211_105.jpg);
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 40%;
+}
+.con1{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.con2{
+    margin-top: 15px;
+    text-align: center;
+}
+.reset_btn{
+    width: 140px;
+    height: 40px;
+    background-color: red;
+    color: white;  
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 5px;
+    border: none;
+    margin-right: 5px;
+}
+#rmvOne{
+    width: 140px;
+    height: 40px;
+    background-color: orange;
+    color: white;  
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 5px;
+    border: none;
+    margin-left: 5px;
+}
+
+.btn{
+  margin-right: 20px;
+  margin-top: 30px;
+  height: 40px;
+  font-size: 18px;
+  border-radius: 10px;
+  border: none;
+  color: white;
+  font-weight: bolder;
+}
+.bag{
+    width: 160px;
+    background-color: rgb(133, 185, 59);
+}
+.wish{
+    width: 200px;
+    background-color: rgb(255, 0, 170);
+}
+.sale{
+    width: 220px;
+    background-color:  rgb(133, 185, 59);
+}
+
+.bag:hover{
+    background-color: rgb(115, 170, 38);
+}
+.bag:active{
+    background-color:  rgb(97, 143, 34);
+}
+
+.sale:hover{
+    background-color: rgb(115, 170, 38);
+}
+.sale:active{
+    background-color:  rgb(97, 143, 34);
+}
+
+.wish:hover{
+    background-color: rgb(252, 74, 192);
+}
+.wish:active{
+    background-color: rgb(228, 13, 156);
+}
+.heading{
+    text-align: center;
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    background-color: rgb(23, 0, 77);
+}
+
+.game-bg{
+   margin-top: 50px;
+/*background-image: url(https://png.pngtree.com/template/20220516/ourlarge/pngtree-rock-paper-scissors-hand-game-banner-image_1523506.jpg);*/
+   background-color: rgba(163, 106, 255, 0.411);
+   height: 250px;
+}
+.game-cont{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.boundbox{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 40%;
+    text-align: center;
+    margin-top: 15px;
+    /* background-color: yellow; */
+}
+
+.game-btn{
+    height:40px;
+    width: 130px;
+    border-radius: 5px;
+    border: none;
+    font-size: 20px;
+    font-weight: bolder;
+    background: linear-gradient(to right, rgba(138, 0, 218, 0.635),#0045db);
+}
+.game-btn:hover{
+    background: linear-gradient(to right, rgba(95, 0, 150, 0.635),#002d8f);
+}
+.game-btn:active{
+    background: linear-gradient(to right,  rgba(48, 0, 77, 0.635),#001f63);
+}
+.score{
+    width: 470px;
+    margin-top: 5px;
+    height: 100px;
+    border: none;
+    border-radius: 5px;
+    background-color: #00002c;
+    color: #eeff0e;
+    border: none;
+    font-size: 50px;
+    text-align: center; 
+}
+.row{
+    display: flex;
+    justify-content: space-evenly;
+    color: #f4ff56;
+}
