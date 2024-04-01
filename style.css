@@ -4,154 +4,57 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     box-sizing: border-box;
 }
-body{
-    background: rgb(84,0,57);
-background: linear-gradient(90deg, rgba(84,0,57,1) 0%, rgba(192,7,132,1) 38%, rgba(0,172,255,1) 74%, rgba(0,86,128,1) 100%);
-}
-.container{
+body {
+    font-family: Arial, sans-serif;
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    width: 100%;
-    height: 40%;
-}
-.con1{
-    display: flex;
-    width: 100%;
-    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(160deg, rgb(4, 141, 254) 2%, rgba(192,7,132,1) 98%);
 }
 
-.con2{
-    margin-top: 15px;
+.game-container {
     text-align: center;
-}
-.reset_btn{
-    width: 140px;
-    height: 40px;
-    background-color: red;
-    color: white;  
-    font-size: 15px;
-    font-weight: bold;
-    text-align: center;
-    border-radius: 5px;
-    border: none;
-    margin-right: 5px;
-}
-#rmvOne{
-    width: 140px;
-    height: 40px;
-    background-color: orange;
-    color: white;  
-    font-size: 15px;
-    font-weight: bold;
-    text-align: center;
-    border-radius: 5px;
-    border: none;
-    margin-left: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 80px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.674);
 }
 
-.btn{
-  margin-right: 20px;
-  margin-top: 30px;
-  height: 40px;
-  font-size: 18px;
-  border-radius: 10px;
-  border: none;
-  color: white;
-  font-weight: bolder;
-}
-.bag{
-    width: 160px;
-    background-color: rgb(133, 185, 59);
-}
-.wish{
-    width: 200px;
-    background-color: rgb(255, 0, 170);
-}
-.sale{
-    width: 220px;
-    background-color:  rgb(133, 185, 59);
+.game-title {
+    color: #333;
+    margin-bottom: 20px;
 }
 
-.bag:hover{
-    background-color: rgb(115, 170, 38);
-}
-.bag:active{
-    background-color:  rgb(97, 143, 34);
+.buttons-container {
+    margin: 20px 0;
 }
 
-.sale:hover{
-    background-color: rgb(115, 170, 38);
-}
-.sale:active{
-    background-color:  rgb(97, 143, 34);
-}
-
-.wish:hover{
-    background-color: rgb(252, 74, 192);
-}
-.wish:active{
-    background-color: rgb(228, 13, 156);
-}
-.heading{
-    text-align: center;
-    font-size: 40px;
-    font-family: Arial, Helvetica, sans-serif;
+.game-button {
+    background-color: #007bff;
     color: white;
-    background-color: rgb(23, 0, 77);
-}
-
-.game-bg{
-   margin-top: 50px;
-/*background-image: url(https://png.pngtree.com/template/20220516/ourlarge/pngtree-rock-paper-scissors-hand-game-banner-image_1523506.jpg);*/
-   background-color: rgba(163, 106, 255, 0.411);
-   height: 250px;
-}
-.game-cont{
-    margin-top: 10px;
-    display: flex;
-    justify-content: center;
-}
-
-.boundbox{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    width: 40%;
-    text-align: center;
-    margin-top: 15px;
-    /* background-color: yellow; */
-}
-
-.game-btn{
-    height:40px;
-    width: 130px;
+    border: none;
+    padding: 10px 20px;
+    margin: 0 10px;
     border-radius: 5px;
-    border: none;
-    font-size: 20px;
-    font-weight: bolder;
-    background: linear-gradient(to right, rgba(138, 0, 218, 0.635),#0045db);
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
 }
-.game-btn:hover{
-    background: linear-gradient(to right, rgba(95, 0, 150, 0.635),#002d8f);
+
+.game-button:hover {
+    background-color: #0056b3;
 }
-.game-btn:active{
-    background: linear-gradient(to right,  rgba(48, 0, 77, 0.635),#001f63);
+
+.result-container {
+    margin-top: 20px;
 }
-.score{
-    width: 470px;
-    margin-top: 5px;
-    height: 100px;
-    border: none;
+
+.result-display {
+    border: 2px solid #007bff;
     border-radius: 5px;
-    background-color: #00002c;
-    color: #eeff0e;
-    border: none;
-    font-size: 50px;
-    text-align: center; 
-}
-.row{
-    display: flex;
-    justify-content: space-evenly;
-    color: #f4ff56;
+    padding: 10px;
+    font-size: 16px;
+    color: #333;
 }
