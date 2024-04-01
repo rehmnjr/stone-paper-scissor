@@ -2,7 +2,7 @@ let gameBtn1 = document.getElementById('game-btn1');
 let gameBtn2 = document.getElementById('game-btn2');
 let gameBtn3 = document.getElementById('game-btn3');
 
-let selectBtn = document.querySelectorAll('.game-btn');
+let selectBtn = document.querySelectorAll('.game-button');
 let playerChoice;
 let computerChoice;
 
@@ -27,26 +27,29 @@ function handleButtonClick(button){
 }
 //<-------......------->
 
-function randomChoice(){
-    let val = Math.floor(Math.random()*3);
+function randomChoice() {
+    let val = Math.floor(Math.random() * 3);
 
-    if(val > 0 && val <=1){
-      computerChoice = 'Stone';
-    }
-   else if(val > 1 && val <=2){
+    if (val >= 0 && val < 1) {
+        computerChoice = 'Stone';
+    } else if (val >= 1 && val < 2) {
         computerChoice = 'Paper';
-      }
-   else{
-    computerChoice = 'Scissor';
-   }
-   
-   let inputTxt = document.getElementById('display');
-   inputTxt.value = computerChoice; 
+    } else {
+        computerChoice = 'Scissor';
+    }
 
-   setTimeout(() => {
-    res();
-}, 100);
+    let inputTxt = document.getElementById('display');
+    inputTxt.classList.add("change");  
+    setTimeout(() => {
+        inputTxt.classList.remove("change"); 
+    }, 100);  
+
+    inputTxt.value = computerChoice;
+    setTimeout(() => {
+        res();
+    }, 100);
 }
+
 
 gameBtn1.addEventListener('click', randomChoice);
 gameBtn2.addEventListener('click', randomChoice);
