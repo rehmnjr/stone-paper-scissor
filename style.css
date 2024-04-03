@@ -17,18 +17,30 @@ body {
 .game-container {
     text-align: center;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    padding: 80px;
+    padding: 40px;
     border-radius: 10px;
     background-color: rgba(255, 255, 255, 0.674);
 }
 
+.alert{
+    height: 50px;
+    width: 100%;
+    border: 1px solid blue;
+    border-radius: 5px;
+    background-color: rgb(27, 27, 27);
+    color: rgb(255, 0, 247);
+    font-size: 1.2rem;
+    padding: 20px;
+    text-align: center;
+    font-weight: bolder;
+}
 .game-title {
-    color: #333;
-    margin-bottom: 20px;
+    color: #020075;
+    margin-bottom: 50px;
 }
 
 .buttons-container {
-    margin: 20px 0;
+    margin: 50px 0;
 }
 
 .game-button {
@@ -55,8 +67,10 @@ body {
     border: 2px solid #007bff;
     border-radius: 5px;
     padding: 10px;
-    font-size: 16px;
-    color: #333;
+    font-size: 1.2rem;
+    font-weight: bolder;
+    color: #007bff;
+    text-align: center;
 }
 
 /* Keyframes for the change animation */
